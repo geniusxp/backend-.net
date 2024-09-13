@@ -19,7 +19,7 @@ namespace geniusxp_backend_dotnet.Builders
 
         public TicketBuilder TicketNumber()
         {
-            _ticket.TicketNumber = new Guid().ToString();
+            _ticket.TicketNumber = Guid.NewGuid().ToString();
             return this;
         }
 

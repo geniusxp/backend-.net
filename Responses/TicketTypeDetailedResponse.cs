@@ -4,6 +4,7 @@ namespace geniusxp_backend_dotnet.Responses
 {
     public class TicketTypeDetailedResponse
     {
+        public int Id { get; set; }
         public float? Price { get; set; }
         public string? Category { get; set; }
         public string? Description { get; set; }
@@ -14,6 +15,7 @@ namespace geniusxp_backend_dotnet.Responses
         public static TicketTypeDetailedResponse From(TicketType ticketType)
         {
             var response = new TicketTypeDetailedResponse();
+            response.Id = ticketType.Id;
             response.Price = ticketType.Price;
             response.Category = ticketType.Category;    
             response.Description = ticketType.Description;

@@ -111,3 +111,4 @@ C:\FIAP-2_ANO\geniusxp\geniusxp-backend-dotnet\obj\Debug\net8.0\geniusxp-backend
 C:\FIAP-2_ANO\geniusxp\geniusxp-backend-dotnet\obj\Debug\net8.0\geniusxp-backend-dotnet.genruntimeconfig.cache
 C:\FIAP-2_ANO\geniusxp\geniusxp-backend-dotnet\obj\Debug\net8.0\ref\geniusxp-backend-dotnet.dll
 C:\FIAP-2_ANO\geniusxp\geniusxp-backend-dotnet\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\FIAP-2_ANO\geniusxp\geniusxp-backend-dotnet\obj\Debug\net8.0\geniusxp-backend-dotnet.sourcelink.json

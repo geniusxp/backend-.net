@@ -15,6 +15,7 @@ namespace geniusxp_backend_dotnet.Controllers
         public EventDaysController(AppDbContext context) {  _context = context; }
 
         [HttpDelete("{id}")]
+        [SwaggerOperation("Deleta um dia de evento")]
         public async Task<IActionResult> DeleteEventDay(int id)
         {
             var foundEventDay = await _context.EventsDay.FindAsync(id);

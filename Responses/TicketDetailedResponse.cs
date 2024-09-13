@@ -4,6 +4,7 @@ namespace geniusxp_backend_dotnet.Responses
 {
     public class TicketDetailedResponse
     {
+        public int Id { get; set; }
         public DateTime? DateOfUse { get; set; }
         public DateTime? DateIssued { get; set; }
         public string? TicketNumber { get; set; }
@@ -13,6 +14,7 @@ namespace geniusxp_backend_dotnet.Responses
         {
             return Tickets.Select(ticket => new TicketDetailedResponse
             {
+                Id = ticket.Id,
                 DateIssued = ticket.DateIssued,
                 TicketNumber = ticket.TicketNumber,
                 DateOfUse = ticket.DateOfUse,

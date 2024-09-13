@@ -21,6 +21,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpPost]
+        [SwaggerOperation("Cadastra um evento com dias de evento e tipos de ingresso")]
         public async Task<ActionResult<EventSimplifiedResponse>> CreateEvent(CreateEventRequest request)
         {
             var eventBuilder = new EventBuilder();
@@ -32,10 +33,17 @@ namespace geniusxp_backend_dotnet.Controllers
                 .Description(request.Description)
                 .EventType(request.EventType)
                 .ImageUrl(request.ImageUrl)
+                .Days()
+                .TicketTypes()
                 .Build();
 
             foreach (var item in request.EventDays)
             {
+                if (item.EndDate < item.StartDate)
+                {
+                    return BadRequest("Dia de evento inválido!");
+                }
+
                 var newEventDay = eventDayBuilder
                     .StartDate(item.StartDate)
                     .EndDate(item.EndDate)
@@ -67,6 +75,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpGet]
+        [SwaggerOperation("Lista todos os eventos")]
         public async Task<ActionResult<IEnumerable<EventSimplifiedResponse>>> FindAllEvents()
         {
             return Ok(await _context.Events
@@ -75,6 +84,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpGet("{id}")]
+        [SwaggerOperation("Lista um evento por Id")]
         public async Task<ActionResult<EventDetailedResponse>> FindEventById(int id)
         {
             var foundEvent = await _context.Events
@@ -91,6 +101,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpDelete("{id}")]
+        [SwaggerOperation("Deleta um evento por Id")]
         public async Task<IActionResult> DeleteEvent(int id)
         {
             var foundEvent = await _context.Events
@@ -114,6 +125,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpPut("{id}")]
+        [SwaggerOperation("Atualiza um evento")]
         public async Task<IActionResult> UpdateEvent(int id, UpdateEventRequest request)
         {
             var foundEvent = await _context.Events.FindAsync(id);

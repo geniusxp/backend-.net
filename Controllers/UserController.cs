@@ -21,6 +21,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpPost]
+        [SwaggerOperation("Cria usuário")]
         public async Task<ActionResult<UserSimplifiedResponse>> CreateUser(CreateUserRequest request)
         {
             var userBuilder = new UserBuilder();
@@ -45,6 +46,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpGet]
+        [SwaggerOperation("Lista todos os usuários")]
         public async Task<ActionResult<IEnumerable<UserSimplifiedResponse>>> FindAllUsers()
         {
             return Ok(await _context.Users
@@ -53,6 +55,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpGet("{id}")]
+        [SwaggerOperation("Lista usuário por Id")]
         public async Task<ActionResult<UserDetailedResponse>> FindUserById(int id)
         {
             var foundUser = await _context.Users
@@ -70,6 +73,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpDelete("{id}")]
+        [SwaggerOperation("Deleta usuário por Id")]
         public async Task<IActionResult> DeleteUser(int id)
         {
             var foundUser = await _context.Users
@@ -91,6 +95,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpPut("{id}")]
+        [SwaggerOperation("Atualiza um usuário")]
         public async Task<IActionResult> UpdateUser(int id, UpdateUserRequest request)
         {
             var foundUser = await _context.Users.FindAsync(id);

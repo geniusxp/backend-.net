@@ -35,6 +35,18 @@ namespace geniusxp_backend_dotnet.Builders
             return this;
         }
 
+        public EventBuilder TicketTypes()
+        {
+            _event.TicketTypes = new List<TicketType>();
+            return this;
+        }
+
+        public EventBuilder Days()
+        {
+            _event.Days = new List<EventDay>();
+            return this;
+        }
+
         public Event Build()
         {
             return _event;

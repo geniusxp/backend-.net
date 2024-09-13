@@ -22,6 +22,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpPost]
+        [SwaggerOperation("Cria um novo ingresso")]
         public async Task<ActionResult<TicketSimplifiedResponse>> CreateTicket(CreateTicketRequest request)
         {
             var user = await _context.Users.FindAsync(request.UserId);
@@ -32,6 +33,11 @@ namespace geniusxp_backend_dotnet.Controllers
                 return NotFound();
             }
 
+            if (ticketType.AvailableQuantity == ticketType.QuantitySold)
+            {
+                return BadRequest("Tipo de ingresso esgotado!");
+            }
+
             var ticketBuilder = new TicketBuilder();
 
             var newTicket = ticketBuilder
@@ -40,16 +46,18 @@ namespace geniusxp_backend_dotnet.Controllers
                 .User(user)
                 .TicketNumber()
                 .Build();
+
+            ticketType.QuantitySold += 1;
             
             _context.Tickets.Add(newTicket);
+            _context.TicketTypes.Update(ticketType);
             await _context.SaveChangesAsync();
 
-            var createdTicket = TicketSimplifiedResponse.From(newTicket);
-
-            return CreatedAtAction("FindTicketById", new { id = createdTicket.Id }, createdTicket);
+            return Created();
         }
 
         [HttpDelete]
+        [SwaggerOperation("Delete um ingresso por Id")]
         public async Task<IActionResult> DeleteTicket(int id)
         {
             var foundTicket = await _context.Tickets.FindAsync(id);
@@ -66,6 +74,7 @@ namespace geniusxp_backend_dotnet.Controllers
         }
 
         [HttpPut]
+        [SwaggerOperation("Valida um ingresso existente")]
         public async Task<IActionResult> ValidateTicket(Guid ticketNumber)
         {
             var foundTicket = await _context.Tickets.FirstOrDefaultAsync(t => t.TicketNumber == ticketNumber.ToString());

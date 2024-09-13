@@ -4,6 +4,7 @@ namespace geniusxp_backend_dotnet.Responses
 {
     public class EventDaySimplifiedResponse
     {
+        public int Id { get; set; }
         public required DateTime StartDate { get; set; }
         public required DateTime EndDate { get; set; }
         public string? TransmissionUrl { get; set; }
@@ -12,6 +13,7 @@ namespace geniusxp_backend_dotnet.Responses
         {
             return eventDays.Select(eventDay => new EventDaySimplifiedResponse
             {
+                Id = eventDay.Id,
                 StartDate = eventDay.StartDate,
                 EndDate = eventDay.EndDate,
                 TransmissionUrl = eventDay.TransmissionUrl
