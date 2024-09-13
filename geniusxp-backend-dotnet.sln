@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "geniusxp-backend-dotnet", "geniusxp-backend-dotnet.csproj", "{987A602F-A1B6-44C4-9667-3B491B40F93B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{987A602F-A1B6-44C4-9667-3B491B40F93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987A602F-A1B6-44C4-9667-3B491B40F93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987A602F-A1B6-44C4-9667-3B491B40F93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987A602F-A1B6-44C4-9667-3B491B40F93B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59B2A6B9-F38F-4944-ADBF-3866276703DF}
+	EndGlobalSection
+EndGlobal
