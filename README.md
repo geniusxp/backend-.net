@@ -26,7 +26,68 @@ O uso do Builder traz benefícios claros:
 
 Assim, o padrão Builder foi implementado para otimizar a construção das classes da API, promovendo maior flexibilidade e manutenção eficiente.
 
-# Instruções para executar o projeto
+# Instruções para executar o projeto (Local)
+Para executar o projeto localmente, é necessário possuir alguns programas e ferramentas instaladas e seguir esses passos:
+
+## Pré-requisitos
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) com o workload de desenvolvimento para ASP.NET Core
+- [.NET SDK](https://dotnet.microsoft.com/en-us/download/dotnet) (versão compatível com o projeto (.NET 8.0))
+- Git instalado ([Baixar Git](https://git-scm.com/))
+- Banco de Dados Oracle
+
+## Passo 1: Clonar o Repositório
+Abra o terminal ou o Git Bash e execute o seguinte comando para clonar o repositório do projeto:
+
+```bash
+git clone https://github.com/geniusxp/backend-.net
+```
+
+## Passo 2: Navegar até a Pasta do Projeto
+Depois de clonar o repositório, navegue até a pasta raiz do projeto:
+
+```bash
+cd backend-.net
+```
+
+## Passo 3: Restaurar as Dependências
+Restaure todas as dependências necessárias para o projeto executando o seguinte comando:
+
+```bash
+dotnet restore
+```
+## Passo 4: Configurar String de Conexão
+Edite o arquivo appsettings.json e configure credenciais corretas para acessar seu banco de dados Oracle:
+
+```json
+"ConnectionStrings": {
+  "DefaultConnection": "Data Source=oracle.fiap.com.br:1521/orcl; User Id={Seu usuário}; Password={Sua senha}"
+}
+```
+
+## Passo 5: Executar as migrations do projeto
+Aplique as migrations executando o seguinte comando para criar as tabelas em seu banco de dados:
+
+```bash
+dotnet ef database update
+```
+
+## Passo 6: Executar o projeto
+Para rodar o projeto, utilize o seguinte comando:
+
+```bash
+dotnet run
+```
+Isso irá iniciar a API localmente. A saída no terminal indicará o endereço no qual a API está sendo executada, geralmente http://localhost:5130
+
+## Passo 7: Acessando documentação e testando o projeto com Swagger
+No navegador, acesse o seguinte endereço para visualizar a documentação da API gerada pelo Swagger:
+
+```bash
+   https://localhost:5130/swagger/index.html
+```
+Através da interface do Swagger, você pode testar os endpoints diretamente, enviando requisições e recebendo as respostas em tempo real. Isso facilita a verificação da funcionalidade da API sem a necessidade de ferramentas externas.
+
+# Instruções para executar o projeto (Nuvem)
 
 # Equipe GeniusXP
 - RM99565 - Erick Nathan Capito Pereira
