@@ -1,5 +1,7 @@
+<img src="https://github.com/geniusxp/backend-.net/blob/main/banner_geniusxp.png">
+
 # Sobre o GeniusXP
-Uma plataforma centralizada para gestão de eventos que simplifica operações como inscrições, pagamentos e check-in, enquanto aumenta o engajamento com enquetes e networking. A inteligência artificial da GeniusXP utiliza as preferências dos usuários para oferecer uma experiência altamente personalizada e otimizar o planejamento. Com análise de sentimento e assistência virtual, a plataforma proporciona interações mais significativas, elevando a eficiência da gestão e tornando os eventos mais impactantes para cada participante.
+GeniusXP é uma plataforma centralizada para gestão de eventos que simplifica operações como inscrições, pagamentos e check-in, enquanto aumenta o engajamento com enquetes e networking. A inteligência artificial da GeniusXP utiliza as preferências dos usuários para oferecer uma experiência altamente personalizada e otimizar o planejamento. Com análise de sentimento e assistência virtual, a plataforma proporciona interações mais significativas, elevando a eficiência da gestão e tornando os eventos mais impactantes para cada participante.
 
 # Arquitetura de Software Utilizada
 Para a arquitetura da API do projeto GeniusXP, optamos por adotar uma abordagem **monolítica**. Essa decisão é justificada por diversos fatores que levam em conta tanto o contexto atual do projeto quanto seus requisitos técnicos e operacionais.
