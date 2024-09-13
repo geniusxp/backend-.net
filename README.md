@@ -83,7 +83,7 @@ Isso irá iniciar a API localmente. A saída no terminal indicará o endereço n
 No navegador, acesse o seguinte endereço para visualizar a documentação da API gerada pelo Swagger:
 
 ```bash
-   https://localhost:5130/swagger/index.html
+https://localhost:5130/swagger/index.html
 ```
 Através da interface do Swagger, você pode testar os endpoints diretamente, enviando requisições e recebendo as respostas em tempo real. Isso facilita a verificação da funcionalidade da API sem a necessidade de ferramentas externas.
 
