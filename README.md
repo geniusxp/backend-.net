@@ -196,6 +196,9 @@ Corpo da Requisição
 - [GET] /api/user/{id}
 - [DELETE] /api/user/{id}
 
+# Vídeo Demonstração
+Para ver o vídeo de demonstração da aplicação, acesse: https://youtu.be/UvQf4g5VyBg
+
 # Equipe GeniusXP
 - RM99565 - Erick Nathan Capito Pereira
 - RM550841 - Lucas Araujo Oliveira Silva
