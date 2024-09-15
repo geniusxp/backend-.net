@@ -89,6 +89,112 @@ https://localhost:5130/swagger/index.html
 Através da interface do Swagger, você pode testar os endpoints diretamente, enviando requisições e recebendo as respostas em tempo real. Isso facilita a verificação da funcionalidade da API sem a necessidade de ferramentas externas.
 
 # Instruções para executar o projeto (Nuvem)
+Para executar e testar a API GeniusXP, siga os passos abaixo:
+
+1. Acesse o seguinte endereço para iniciar o projeto:
+```
+https://geniusxp-api.azurewebsites.net
+```
+
+2. Para visualizar a documentação e testar os endpoints da API, acesse o Swagger no seguinte link:
+```
+https://geniusxp-api.azurewebsites.net/swagger/index.html
+```
+O Swagger fornece uma interface interativa para explorar os recursos da API diretamente no navegador.
+
+# Endpoints da API
+Abaixo estão os principais endpoints disponíveis na API GeniusXP, acessíveis via o Swagger:
+
+## Eventos
+- [POST] /api/events
+
+Corpo da requisição:
+```json
+{
+  "name": "string",
+  "description": "string",
+  "eventType": "string",
+  "imageUrl": "string",
+  "eventDays": [
+    {
+      "startDate": "2024-09-15T23:10:16.337Z",
+      "endDate": "2024-09-15T23:10:16.337Z",
+      "transmissionUrl": "string"
+    }
+  ],
+  "ticketTypes": [
+    {
+      "price": 0,
+      "category": "string",
+      "description": "string",
+      "availableQuantity": 0
+    }
+  ]
+}
+```
+- [PUT] /api/events/{id}
+
+Corpo da requisição:
+
+```json
+{
+  "name": "string",
+  "description": "string",
+  "eventType": "string",
+  "imageUrl": "string"
+}
+```
+- [GET] /api/events
+- [GET] /api/events/{id}
+- [DELETE] /api/events/{id}
+
+## Ingresso
+- [POST] /api/ticket
+
+Corpo da Requisição
+```json
+{
+  "userId": 0,
+  "ticketTypeId": 0
+}
+```
+- [PUT] /api/ticket/{ticketNumber}
+- [DELETE] /api/ticket/{id}
+
+## Usuário
+- [POST] /api/user
+
+Corpo da Requisição
+```json
+{
+  "name": "string",
+  "email": "string",
+  "password": "string",
+  "cpf": "string",
+  "dateOfBirth": "2024-09-15",
+  "avatarUrl": "string",
+  "description": "string",
+  "interests": "string"
+}
+```
+- [PUT] /api/user/{id}
+
+Corpo da Requisição
+```json
+{
+  "name": "string",
+  "email": "string",
+  "password": "string",
+  "cpf": "string",
+  "dateOfBirth": "2024-09-15",
+  "avatarUrl": "string",
+  "description": "string",
+  "interests": "string"
+}
+```
+- [GET] /api/user
+- [GET] /api/user/{id}
+- [DELETE] /api/user/{id}
 
 # Equipe GeniusXP
 - RM99565 - Erick Nathan Capito Pereira
