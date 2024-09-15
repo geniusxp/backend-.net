@@ -13,6 +13,7 @@ A complexidade adicional trazida por microsserviços, como a necessidade de orqu
 Embora a arquitetura monolítica possa, em alguns casos, oferecer limitações de escalabilidade, essas limitações só se tornam relevantes conforme o projeto cresce substancialmente. Nesse momento inicial, os eventos menores que a GeniusXP está organizando e gerenciando não exigem a escalabilidade granular e distribuída de uma arquitetura de microsserviços. Quando a base de clientes e a complexidade das operações crescerem, podemos considerar uma migração para microsserviços, mas isso será feito de maneira gradual e estratégica, conforme a demanda exigir.
 
 # Arquitetura da Solução
+<img src="https://github.com/geniusxp/backend-.net/blob/main/GeniusXP_Devops_Arq.png">
 
 # Design Pattern Aplicado
 
