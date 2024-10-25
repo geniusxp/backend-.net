@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s4dHZZsqAhHHSJvkJiO9DyRa4z1M7hBBgAZsckAPaIhFdG5158ZOaihNBoZs0z0gz7J0sF3dcdS1knZ/DIOhgA==",
+  "dgSpecHash": "HW0V/5oK5twYzawzPEvHXDAvmzM5MGC5Kv/Wfnf9JS6i0zBKRL8CramatO5A2Y0oaLdAVrX9xhmW57bUEjw27A==",
   "success": true,
-  "projectFilePath": "C:\\FIAP-2_ANO\\geniusxp\\geniusxp-backend-dotnet\\geniusxp-backend-dotnet.csproj",
+  "projectFilePath": "C:\\FIAP-2_ANO\\geniusxp\\backend-.net\\geniusxp-backend-dotnet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lucas Araujo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Lucas Araujo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
@@ -29,6 +29,7 @@
     "C:\\Users\\Lucas Araujo\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\Lucas Araujo\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\Lucas Araujo\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
+    "C:\\Users\\Lucas Araujo\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.5\\microsoft.visualstudio.azure.containers.tools.targets.1.19.5.nupkg.sha512",
     "C:\\Users\\Lucas Araujo\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\Lucas Araujo\\.nuget\\packages\\oracle.entityframeworkcore\\8.23.50\\oracle.entityframeworkcore.8.23.50.nupkg.sha512",
     "C:\\Users\\Lucas Araujo\\.nuget\\packages\\oracle.manageddataaccess.core\\23.5.0\\oracle.manageddataaccess.core.23.5.0.nupkg.sha512",

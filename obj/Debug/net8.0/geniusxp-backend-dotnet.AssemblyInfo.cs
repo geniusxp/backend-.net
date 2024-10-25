@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("82a84bf9-9664-4963-aedc-46c6b5abc1da")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("geniusxp-backend-dotnet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd38180ba136ed7db4805b2bd0b69f15da0a14ff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+656881551976f9eb698901ab060a0d4ef6e5b180")]
 [assembly: System.Reflection.AssemblyProductAttribute("geniusxp-backend-dotnet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("geniusxp-backend-dotnet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
